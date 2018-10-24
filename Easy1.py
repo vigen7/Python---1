@@ -11,4 +11,5 @@
 
 a = input("Введите целое число:")
 
-print(a)
+for b in a:
+    print(b)
