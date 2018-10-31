@@ -2,14 +2,14 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Виген Осипов
+# Author:      v.osipov
 #
-# Created:     23.10.2018
+# Created:     27.10.2018
 # Copyright:   (c) v.osipov 2018
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
+day = {'27' : 'Двадцать седьмое'}
+month = {'10' : 'октября'}
 
-a = input("Введите целое число:")
-
-for b in a:
-    print(b)
+a = input().split('.')
+print(day[a[0]]+ ' ' + month[a[1]] + ' ' + a[2] + ' ' + 'года')

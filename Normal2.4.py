@@ -2,14 +2,23 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Виген Осипов
+# Author:      v.osipov
 #
-# Created:     23.10.2018
+# Created:     27.10.2018
 # Copyright:   (c) v.osipov 2018
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-a = input("Введите целое число:")
+a = [1, 5, 4, 9, 4]
+b = []
+for c in a:
+    if c not in b:
+        b.append(c)
+print(b)
 
-for b in a:
-    print(b)
+a = [1, 5, 4, 9, 4]
+b = []
+for c in a:
+    if a.count(c) == 1:
+        b.append(c)
+print(b)

@@ -2,14 +2,16 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Виген Осипов
+# Author:      v.osipov
 #
-# Created:     23.10.2018
+# Created:     25.10.2018
 # Copyright:   (c) v.osipov 2018
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
+a = [1, 2, 3, 5, 6]
+b = [3, 4, 6, 9, 10]
 
-a = input("Введите целое число:")
-
-for b in a:
-    print(b)
+for c in b:
+    if c in a:
+        a.remove(c)
+print(a)
